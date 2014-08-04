@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="introToBootstrapApp">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RailsBridge | Intro To Bootstrap</title>
 	<!-- css links -->
-	<link href="css/fonts/opensans.css" rel="stylesheet"/>
-	<link href="css/fonts/aleo.css" rel="stylesheet"/>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/doc_page.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
 </head>
-<body>
+<body ng-controller="indexCtrl">
 	<nav class="top cf" role="navigation">
 		<div class="navbar-header cf title">
 			<a href="#"><span class="brand">RailsBridge </span>Intro to Bootstrap</a>
@@ -16,8 +18,8 @@
 		<ul class="navbar-nav nav">
 			<li>
 				<ul class="flags">
-					<li><a href="http://docs.railsbridge.org"><img src="images/flags/US.png"></a></li>
-					<!--<li><a href="http://es.railsbridge.org"><img src="images/flags/ES.png"></a></li>-->
+					<li><a href="http://docs.railsbridge.org"><img src="img/flags/US.png"></a></li>
+					<!--<li><a href="http://es.railsbridge.org"><img src="img/flags/ES.png"></a></li>-->
 				</ul>
 			</li>
 <!--			
@@ -48,14 +50,20 @@
 			<li><a href="https://github.com/railsbridge/docs/blob/master/sites/en/docs/docs.step">git</a></li>			
 		</ul>
 	</nav>
+	<section ui-view>
+		<!-- table of contents loaded here -->
+	</section>
+	<footer>
+		<p>RailsBridge Curriculum Style is maintained by RailsBridge volunteers.</p>
 
-<footer>
-	<p>RailsBridge Curriculum Style is maintained by RailsBridge volunteers.</p>
-
-	<p>If you find something that could be improved, please make a <a href="https://github.com/railsbridge/railsbridge-curriculum-style">pull request </a>or <a href="https://github.com/railsbridge/railsbridge-curriculum-style/issues/new">drop us a note </a>via
-GitHub Issues (no technical knowledge required).</p>
-	<p>Source: <a href="https://github.com/railsbridge/railsbridge-curriculum-style">https://github.com/railsbridge/railsbridge-curriculum-style</a>
-	</p>
-</footer>	
+		<p>If you find something that could be improved, please make a <a href="https://github.com/railsbridge/railsbridge-curriculum-style">pull request </a>or <a href="https://github.com/railsbridge/railsbridge-curriculum-style/issues/new">drop us a note </a>via
+	GitHub Issues (no technical knowledge required).</p>
+		<p>Source: <a href="https://github.com/railsbridge/railsbridge-curriculum-style">https://github.com/railsbridge/railsbridge-curriculum-style</a>
+		</p>
+	</footer>
+<!-- js links -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

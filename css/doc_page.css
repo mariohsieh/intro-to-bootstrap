@@ -109,7 +109,7 @@ nav *, nav *:before, nav *:after {
   margin-bottom: 20px;
   border: 0;
   background-color: #6c266f;
-  background-image: url("/img/navbar_texture.gif");
+  background-image: url("../img/navbar_texture.gif");
   border-bottom-width: 12px;
   border-bottom-color: #2493b8;
   border-bottom-style: solid; }
