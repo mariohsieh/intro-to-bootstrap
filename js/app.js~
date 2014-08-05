@@ -1,0 +1,53 @@
+angular.module("introToBootstrapApp", ['ui.router'])
+
+	// config routes
+	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+
+		//$locationProvider.html5Mode(true);
+		
+		$urlRouterProvider.otherwise('/');
+	
+		$stateProvider
+			.state('home', {
+				templateUrl: 'views/menu.html'
+			})
+			.state('home.welcome', {
+				url: '/',
+				templateUrl: 'views/00-welcome.html'
+			})			
+			.state('home.gettingStarted', {
+				url: '/getting-started',
+				templateUrl: 'views/01-getting-started.html'
+			});
+	})
+
+	.controller("indexCtrl", function($scope, $state) {
+
+		//$state.go('home.welcome');
+
+		// array to hold links
+		$scope.menus = [
+			{ "title": "Intro to Bootstrap",
+				"link":	"home.welcome"
+			},
+			{ "title": "Getting Started",
+				"link":	"home.gettingStarted"
+			},
+			{ "title": "Bootstrap Basics",
+				"link":	"home.bootstrapBasics"
+			},
+			{ "title": "Forms & Buttons",
+				"link":	"home.formsButtons"
+			},
+			{ "title": "Lists & Tables",
+				"link":	"home.listsTables"
+			},
+			{ "title": "Grid System",
+				"link":	"home.gridSystem"
+			},			
+			{ "title": "Resources",
+				"link":	"home.resources"
+			}
+		];
+	});
+

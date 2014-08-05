@@ -1,12 +1,8 @@
 <aside class="toc page-list" id="table_of_contents">
 	<ul>
-		<li><span class="current">Intro to Bootstrap</span></li>
-		<li><a ui-sref="home.gettingStarted">Getting Started</a></li>
-		<li><a ui-sref="home.bootstrapBasics">Bootstrap Basics</a></li>
-		<li><a ui-sref="home.gridSystem">Grid System</a></li>
-		<li><a ui-sref="home.formsButtons">Forms & Buttons</a></li>
-		<li><a ui-sref="home.listsTables">Lists & Tables</a></li>
-		<li><a ui-sref="home.resources">Resources</a></li>
+		<li ng-repeat="menu in menus">
+			<a ui-sref={{menu.state}} ng-click="changeState(menu.state)" ng-class="{'current': isCurrent(menu.state)}">{{menu.title}}</a>
+		</li>
 	</ul>
 </aside><!--
 --><main ui-view>

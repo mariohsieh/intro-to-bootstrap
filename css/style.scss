@@ -1,3 +1,43 @@
+//// tag styles ////
 a {
 	color: rgb(0,0,238);
+}
+
+//// class styles ////
+.overlay {
+	display: none;		
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+	z-index: 1100;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.current {
+	color: inherit;
+}
+.current:hover {
+	text-decoration: none !important;
+}
+main {
+	img {
+		height: 150px;
+		width: auto;
+	}
+	.imgSelected {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: auto;
+		height: auto;
+		z-index: 1101;
+	}
 }
