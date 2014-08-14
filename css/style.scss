@@ -1,3 +1,6 @@
+// imports
+@import "global";
+
 //// tag styles ////
 a {
 	color: rgb(0,0,238);
@@ -15,16 +18,15 @@ a {
 	z-index: 1100;
 }
 
-.pointer {
-	cursor: pointer;
-}
 
 .current {
 	color: inherit;
 }
+
 .current:hover {
 	text-decoration: none !important;
 }
+
 main {
 	img {
 		height: 150px;
