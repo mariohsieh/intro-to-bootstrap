@@ -57,8 +57,8 @@ angular.module("allControllers",[])
 		];
 		
 		$scope.changeState = function(state) {
-			//console.log(state);
 			$scope.currentState = state;
+			console.log($scope.currentState);
 		}
 			
 		$scope.isCurrent = function(state) {
