@@ -1,10 +1,7 @@
 angular.module("allDirectives", [])
 
 	.directive("imgClick", function() {
-		return {
-			restrict: 'A',
-			replace: false,
-			link: function(scope, elem, attr) {
+		function link(scope, elem, attr) {
 				elem.bind('click', function() {
 					var overlay = document.getElementById('overlayBG');
 					if (elem.hasClass('imgSelected') == true) {
@@ -17,5 +14,11 @@ angular.module("allDirectives", [])
 					}
 				});
 			}
+		
+		
+		return {
+			restrict: 'A',
+			replace: false,
+			link: link
 		}
 	});	

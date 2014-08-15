@@ -38,10 +38,11 @@ a {
 .current:hover {
   text-decoration: none !important; }
 
-main img {
+main figure img {
+  display: inline-block;
   height: 150px;
   width: auto; }
-main .imgSelected {
+main figure .imgSelected {
   position: fixed;
   left: 0;
   right: 0;
@@ -50,3 +51,6 @@ main .imgSelected {
   width: auto;
   height: auto;
   z-index: 1101; }
+main figure figurecaption {
+  display: block;
+  font-size: .9em; }

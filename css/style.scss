@@ -28,18 +28,25 @@ a {
 }
 
 main {
-	img {
-		height: 150px;
-		width: auto;
-	}
-	.imgSelected {
-		position: fixed;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		width: auto;
-		height: auto;
-		z-index: 1101;
+	figure {
+		img {
+			display: inline-block;
+			height: 150px;
+			width: auto;
+		}
+		.imgSelected {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: auto;
+			height: auto;
+			z-index: 1101;
+		}
+		figurecaption {
+			display: block;
+			font-size: .9em;
+		}
 	}
 }
