@@ -20,11 +20,15 @@ angular.module("introToBootstrapApp", [
 			.state('home.welcome', {
 				url: '/',
 				templateUrl: 'views/00-welcome.html'
-			})			
+			})
 			.state('home.gettingStarted', {
 				url: '/getting-started',
 				templateUrl: 'views/01-getting-started.html'
+			})			
+			.state('home.bootstrapBasics', {
+				url: '/bootstrap-basics',
+				templateUrl: 'views/02-bootstrap-basics.html'
 			});
-			
+
 	});
 	
