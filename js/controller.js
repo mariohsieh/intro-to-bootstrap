@@ -5,7 +5,9 @@ angular.module("allControllers",[])
 		function initial() {
 		
 			function getState(addy) {
+				console.log(addy);
 				switch(addy) {
+					case '#/':
 					case '/':
 						return 'home.welcome';
 					case '/getting-started':
@@ -62,15 +64,9 @@ angular.module("allControllers",[])
 		}
 			
 		$scope.isCurrent = function(state) {
-			//console.log(state);
 			return $scope.currentState === state;
 		}
-/*
-		$scope.$watch('currentState', function(newValue, oldValue) {
-			console.log(newValue);
-			$scope.isCurrent(newValue);
-		});
-*/		
+		
 		initial();
 	});
 
