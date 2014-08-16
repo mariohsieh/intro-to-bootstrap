@@ -6,8 +6,9 @@ angular.module("allControllers",[])
 			function getState(addy) {
 				console.log(addy);
 				switch(addy) {
-					case '/#/':
-					case '#/':
+					case '':
+					//case '/#/':
+					//case '#/':
 					case '/':
 						return 'home.welcome';
 					case '/getting-started':
