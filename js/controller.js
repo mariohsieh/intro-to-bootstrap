@@ -3,10 +3,10 @@ angular.module("allControllers",[])
 	.controller("indexCtrl", function($scope, $state, $location) {
 		
 		function initial() {
-		
 			function getState(addy) {
 				console.log(addy);
 				switch(addy) {
+					case '/#/':
 					case '#/':
 					case '/':
 						return 'home.welcome';
@@ -60,7 +60,7 @@ angular.module("allControllers",[])
 		
 		$scope.changeState = function(state) {
 			$scope.currentState = state;
-			console.log($scope.currentState);
+			//console.log($scope.currentState);
 		}
 			
 		$scope.isCurrent = function(state) {
