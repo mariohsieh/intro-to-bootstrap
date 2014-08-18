@@ -1,6 +1,7 @@
 angular.module("allDirectives", [])
 
 	.directive("imgClick", function() {
+		
 		function link(scope, elem, attr) {
 				elem.bind('click', function() {
 					var overlay = document.getElementById('overlayBG');

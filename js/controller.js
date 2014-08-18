@@ -7,8 +7,6 @@ angular.module("allControllers",[])
 				console.log(addy);
 				switch(addy) {
 					case '':
-					//case '/#/':
-					//case '#/':
 					case '/':
 						return 'home.welcome';
 					case '/getting-started':
@@ -41,8 +39,8 @@ angular.module("allControllers",[])
 			}
 /*			
 			{ 
-				"title": "Forms & Buttons",
-				"state":	"home.formsButtons"
+				"title": "Buttons, Inputs, & Forms",
+				"state":	"home.buttonsInputsForms"
 			},
 			{ 
 				"title": "Lists & Tables",
@@ -51,7 +49,11 @@ angular.module("allControllers",[])
 			{ 
 				"title": "Grid System",
 				"state":	"home.gridSystem"
-			},			
+			},
+			{ 
+				"title": "Create Webpage from Mockup",
+				"state":	"home.createWebpage"
+			}, 	
 			{ 
 				"title": "Resources",
 				"state":	"home.resources"
