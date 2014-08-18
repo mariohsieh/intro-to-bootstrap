@@ -16,7 +16,6 @@ angular.module("allDirectives", [])
 				});
 			}
 		
-		
 		return {
 			restrict: 'A',
 			replace: false,
