@@ -1,0 +1,9 @@
+{
+	"name" : "intro-to-bootstrap-curriculum",
+	"version" : "0.0.1",
+	"dependencies" : {
+		"font-awesome" : "latest",
+		"angular" : "latest",
+		"angular-ui-router" : "latest"
+	}
+}
