@@ -3,7 +3,6 @@ angular.module("introToBootstrapApp", [
 	'ui.router',
 	'allControllers',
 	'allDirectives'
-	
 	])
 
 	// config routes

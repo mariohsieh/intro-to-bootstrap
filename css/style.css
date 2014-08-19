@@ -7,6 +7,9 @@
 .pointer {
   cursor: pointer; }
 
+.block {
+  display: block; }
+
 .inlineBlock {
   display: inline-block; }
 
@@ -19,17 +22,44 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.85); }
 
+.text-muted {
+  color: #777; }
+
+.text-primary {
+  color: #428bca; }
+
+.text-success {
+  color: #3c763d; }
+
+.text-info {
+  color: #31708f; }
+
+.text-warning {
+  color: #8a6d3b; }
+
+.text-danger {
+  color: #a94442; }
+
+.bg-primary {
+  background-color: #428bca; }
+
+.bg-success {
+  background-color: #dff0d8; }
+
+.bg-info {
+  background-color: #d9edf7; }
+
+.bg-warning {
+  background-color: #fcf8e3; }
+
+.bg-danger {
+  background-color: #f2dede; }
+
 a {
   color: #0000ee; }
 
 .overlay {
   display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1100; }
 
 .current {
@@ -37,6 +67,9 @@ a {
 
 .current:hover {
   text-decoration: none !important; }
+
+.inlineList li {
+  display: inline-block; }
 
 main figure img {
   display: inline-block;
@@ -54,3 +87,14 @@ main figure .imgSelected {
 main figure figurecaption {
   display: block;
   font-size: .9em; }
+main .steps .inlineList li {
+  margin: 0 20px;
+  font-size: 1.3em;
+  font-weight: bold; }
+main .steps input {
+  font-size: 1.2em;
+  padding: 5px 0; }
+main .steps .changeResult {
+  font-size: 1.5em;
+  padding: 10px 0;
+  border: 2px solid #000; }

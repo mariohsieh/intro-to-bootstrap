@@ -1,23 +1,55 @@
 // imports
 @import "global";
 
-//// tag styles ////
+//// missing bootstrap styles ////
+// text //
+.text-muted {
+	color: #777;
+}
+.text-primary {
+	color: #428bca;
+}
+.text-success {
+	color: #3c763d;
+}
+.text-info {
+	color: #31708f;
+}
+.text-warning {
+	color: #8a6d3b;
+}
+.text-danger {
+	color: #a94442;
+}
+
+// background //
+.bg-primary {
+	background-color: #428bca;
+}
+.bg-success {
+	background-color: #dff0d8;
+}
+.bg-info {
+	background-color: #d9edf7;
+}
+.bg-warning {
+	background-color: #fcf8e3;
+}
+.bg-danger {
+	background-color: #f2dede;
+}
+
+
+//// global doc tag styles ////
 a {
 	color: rgb(0,0,238);
 }
 
 //// class styles ////
 .overlay {
-	display: none;		
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-color: rgba(0,0,0,.8);
+	display: none;
 	z-index: 1100;
 }
-
 
 .current {
 	color: inherit;
@@ -27,7 +59,17 @@ a {
 	text-decoration: none !important;
 }
 
+.inlineList li {
+	display: inline-block;
+}
+
+//// header styles ////
+
+
+//// main content styles ////
 main {
+
+	// getting started page
 	figure {
 		img {
 			display: inline-block;
@@ -49,4 +91,24 @@ main {
 			font-size: .9em;
 		}
 	}
+	// bootstrap basics page
+	.steps {
+	 .inlineList li {
+			margin: 0 20px;
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		input {
+			font-size: 1.2em;
+			padding: 5px 0;
+		}
+		.changeResult {
+			font-size: 1.5em;
+			padding: 10px 0;
+			border: 2px solid #000;
+		}
+	}
 }
+
+
+//// footer styles ////

@@ -1,10 +1,10 @@
-angular.module("allControllers",[])
+angular.module("allControllers", [])
 
 	.controller("indexCtrl", function($scope, $state, $location) {
 		
 		function initial() {
 			function getState(addy) {
-				console.log(addy);
+				//console.log(addy);
 				switch(addy) {
 					case '':
 					case '/':

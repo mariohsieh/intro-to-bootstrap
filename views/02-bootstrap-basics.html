@@ -6,12 +6,12 @@
 		<ul>
 			<li>
 				<div class="message">
-					<p>Practice adding Bootstrap classes to HTML elements</p>
+					<p>Practice adding Bootstrap classes</p>
 				</div>
 			</li>
 			<li>
 				<div class="message">
-					<p>Style elements using ultility classes for color</p>
+					<p>Change text and background color of simple HTML elements</p>
 				</div>
 			</li>			
 		</ul>
@@ -36,10 +36,50 @@
 				<blockquote>
 					<div class="message">			
 						<p>
-							Let's start with styling some basic <code>&lt;p&gt;</code> tags.
+							Let's start with styling some basic <code>&lt;p&gt;</code> tags by changing its text color.
+						</p>
+						<p>
+							Bootstrap has a set of contextual colors that are used throughout the framework.&nbsp;&nbsp;Take a look at the keywords and their corresponding colors below:
+						</p>
+						<ul class="inlineList textCenter">
+							<li>
+								<p class="text-muted">muted</p>
+							</li><li>
+								<p class="text-primary">primary</p>
+							</li><li>
+								<p class="text-success">success</p>
+							</li><li>
+								<p class="text-info">info</p>
+							</li><li>
+								<p class="text-warning">warning</p>
+							</li><li>
+								<p class="text-danger">danger</p>
+							</li>
+						</ul>
+						<p>
+							To change the text color of a <code>&lt;p&gt;</code> tag, we use the prefix: "text-" with a keyword and then add it to the class attribute.&nbsp;&nbsp;For example, to change the text color to "green", we add "text-success" as one of the classes.&nbsp;&nbsp;Or to change it "red", we add "text-danger".
+						</p>
+						<p>In the input box below, practice changing the text color of the example sentence:</p>
+						<input type="text" class="center block textCenter" maxlength='30' ng-model="colorChange" />
+						<pre class="textCenter"><br /><code>&lt;p class='{{colorChange}}'&gt;Hello there!&nbsp;&nbsp;How are you?&lt;/p&gt;</code><br /><br /></pre>
+						<p class="changeResult textCenter {{colorChange}}">
+							Hello there!&nbsp;&nbsp;How are you?
+						</p>
+						<p>
+							In addition to changing the text, we can also change the background color with the same keywords.  Instead of the prefix "text-" use "bg-" to change the background color.
+						</p>
+						<p>
+							In the same input field above, mix and match different combinations of text/background colors by adding both classes separated by a single whitespace.  
 						</p>
 					</div>
 				</blockquote>	
+			</div>
+			<a name="step2"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 2</span></h1>
+				<blockquote>
+				</blockquote>			
+			</div>			
 		</blockquote>
 	</section>
 	
