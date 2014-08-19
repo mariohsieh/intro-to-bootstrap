@@ -66,7 +66,7 @@
 							Hello there!&nbsp;&nbsp;How are you?
 						</p>
 						<p>
-							In addition to changing the text, we can also change the background color with the same keywords.  Instead of the prefix "text-" use "bg-" to change the background color.
+							In addition to changing the text, we can also change the background color with the same keywords.  Instead of the prefix "text-" use "bg-" to change the background color. (Note:&nbsp;&nbsp;There is no "bg-muted")
 						</p>
 						<p>
 							In the same input field above, mix and match different combinations of text/background colors by adding both classes separated by a single whitespace.  
@@ -78,14 +78,21 @@
 			<div class="step">
 				<h1><span class="prefix">Step 2</span></h1>
 				<blockquote>
+					<div class="message">
+						<p>
+							Now that you have some practice under your belt, write out some <code>&lt;p&gt;</code> tags in your index file and style them using the bootstrap classes from above.&nbsp;&nbsp;Try styling some <code>&lt;h1&gt;,&lt;h2&gt;,...,&lt;h6&gt;</code> tags as well.
+						</p>
+					</div>
 				</blockquote>			
 			</div>			
 		</blockquote>
 	</section>
-	
-	
-	
-	
-	
-	
+	<section class="step next_step">
+		<h1>Next Step:</h1>
+		<p>In the next section, we will be styling buttons, input fields and forms.</p>
+		<p class="link">Go to <a ui-sref="home.formsButtons" ng-click="changeState('home.formsButtons')">Forms & Buttons</a></p>
+	</section>
+	<div class="back">
+		Back to <a class="back" ui-sref="home.gettingStarted" ng-click="changeState('home.gettingStarted')">Getting Started</a></p>
+	</div>
 </div>
