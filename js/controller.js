@@ -53,6 +53,10 @@ angular.module("allControllers", [])
 				"state":	"home.gridSystem"
 			},
 			{ 
+				"title": "Column Offsets",
+				"state":	"home.columnOffsets"
+			},
+			{ 
 				"title": "Create Webpage from Mockup",
 				"state":	"home.createWebpage"
 			}, 	

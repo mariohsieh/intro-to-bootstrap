@@ -38,11 +38,27 @@
 							Using Bootstrap buttons will require adding the class <code>"btn"</code>.&nbsp;&nbsp;From here, you can adjust the size of the buttons, change the color, and alter its active state.
 						</p>
 						<p>
-							Bootstrap has four sizes of buttons: extra small, small, default, and large
+							Bootstrap has four sizes of buttons:
 						</p>
-						<p>
-							We can set the sizes by adding an additional class: btn-xs, btn-sm, and btn-lg.  The default size does not require any additional classes.
+						<!--extra small, small, default, and large-->
+						<ul class="inlineList textCenter">
+							<li>
+								<p>extra small</p>
+								<button class="btn btn-xs btn-default">hello</button>
+							</li><li>
+								<p>small</p>
+								<button class="btn btn-sm btn-default">hello</button>
+							</li><li>
+								<p>medium</p>
+								<button class="btn btn-default">hello</button>
+							</li><li>
+								<p>large</p>
+								<button class="btn btn-lg btn-default">hello</button>
+							</li>
+						</ul>
+							We can set the sizes by adding an additional class: <code>btn-xs, btn-sm, and btn-lg</code>.  The default size does not require any additional classes.  To create a large button, the code would look like this:
 						</p>
+						<pre class="textCenter"><code>&lt;button class="btn btn-lg"&gt;</code></pre>
 						<p>
 							Buttons, much like paragraphs and headings, can be stylized with contextual colors.  There is one difference however, in that for the grey color, you have to use 'default' instead of muted.  All the other keywords will work.  The prefix for buttons is "btn-".
 						</p>
