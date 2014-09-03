@@ -14,7 +14,9 @@ angular.module("allControllers", [])
 					case '/bootstrap-basics':
 						return 'home.bootstrapBasics';
 					case '/form-elements':
-						return 'home.formElements';							
+						return 'home.formElements';	
+					case '/tables':
+						return 'home.tables';													
 					default:
 						return addy;
 				}
@@ -42,12 +44,12 @@ angular.module("allControllers", [])
 			{ 
 				"title": "Form Elements",
 				"state":	"home.formElements"
+			},
+			{ 
+				"title": "Tables",
+				"state":	"home.tables"
 			}
 /*			
-			{ 
-				"title": "Lists & Tables",
-				"state":	"home.listsTables"
-			},
 			{ 
 				"title": "Grid System",
 				"state":	"home.gridSystem"

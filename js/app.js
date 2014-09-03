@@ -32,9 +32,9 @@ angular.module("introToBootstrapApp", [
 				url: '/form-elements',
 				templateUrl: 'views/03-form-elements.html'
 			})
-			.state('home.listsTables', {
-				url: '/getting-started',
-				templateUrl: 'views/04-lists-tables.html'
+			.state('home.tables', {
+				url: '/tables',
+				templateUrl: 'views/04-tables.html'
 			})			
 			.state('home.gridSystem', {
 				url: '/grid-system',
