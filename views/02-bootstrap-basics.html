@@ -59,18 +59,21 @@
 						<p>
 							To change the text color of a <code>&lt;p&gt;</code> tag, we use the prefix: "text-" with a keyword and then add it to the class attribute.&nbsp;&nbsp;For example, to change the text color to "green", we add "text-success" as one of the classes.&nbsp;&nbsp;Or to change it "red", we add "text-danger".
 						</p>
-						<p>In the input box below, practice changing the text color of the example sentence:</p>
-						<input type="text" class="center block textCenter" maxlength='30' ng-model="colorChange" />
-						<pre class="textCenter"><br /><code>&lt;p class='{{colorChange}}'&gt;Hello there!&nbsp;&nbsp;How are you?&lt;/p&gt;</code><br /><br /></pre>
-						<p class="changeResult textCenter {{colorChange}}">
-							Hello there!&nbsp;&nbsp;How are you?
-						</p>
+						<pre><br />&lt;p class="text-success"&gt;Good Morning!&lt;/p&gt;<br /><br />&lt;p class="text-danger"&gt;Good Night!&lt;/p&gt;<br /><br /></pre>
+						<p class="text-center text-success" style="font-size: 1.2em">Good Morning!</p>
+						<p class="text-center text-danger" style="font-size: 1.2em">Good Night!</p>
 						<p>
 							In addition to changing the text, we can also change the background color with the same keywords.  Instead of the prefix "text-" use "bg-" to change the background color. (Note:&nbsp;&nbsp;There is no "bg-muted")
 						</p>
+						<pre><br />&lt;p class="bg-warning"&gt;&gt;I'm hungry!&lt;/p&gt;<br /><br />&lt;p class="bg-info"&gt;Let's eat!&lt;/p&gt;<br /><br /></pre>
+						<p class="text-center bg-warning" style="font-size: 1.2em">I'm hungry!</p>
+						<p class="text-center bg-info" style="font-size: 1.2em">Let's eat!</p>
 						<p>
-							In the same input field above, mix and match different combinations of text/background colors by adding both classes separated by a single whitespace.  
+							We can also adjust the text alignment by adding the classes: <code>text-left</code>, <code>text-center</code>, <code>text-right</code>, <code>text-justified</code> and <code>text-nowrap</code>
 						</p>
+						<pre><br />&lt;p class="text-center"&gt;Meow!&lt;/p&gt;<br />&lt;p class="text-right"&gt;Woof!&lt;/p&gt;<br /><br /></pre>
+						<p class="text-center" style="font-size: 1.2em">Meow!</p>
+						<p class="text-right" style="font-size: 1.2em">Woof!</p>
 					</div>
 				</blockquote>	
 			</div>
@@ -79,17 +82,30 @@
 				<h1><span class="prefix">Step 2</span></h1>
 				<blockquote>
 					<div class="message">
-						<p>
-							Now that you have some practice under your belt, write out some <code>&lt;p&gt;</code> tags in your index file and style them using the bootstrap classes from above.&nbsp;&nbsp;Try styling some <code>&lt;h1&gt;,&lt;h2&gt;,...,&lt;h6&gt;</code> tags as well.
+						<p>In the input box below, practice styling the example sentence by mixing and matching different combinations of text/background colors and alignment by adding classes separated by a single whitespace.</p>
+						<input type="text" class="center block textCenter" maxlength='35' ng-model="colorChange" />
+						<pre><br /><code>&lt;p class='{{colorChange}}'&gt;Hello there!&nbsp;&nbsp;How are you?&lt;/p&gt;</code><br /><br /></pre>
+						<p class="changeResult {{colorChange}}">
+							Hello there!&nbsp;&nbsp;How are you?
 						</p>
 					</div>
 				</blockquote>			
 			</div>			
+			<a name="step3"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 3</span></h1>
+				<blockquote>
+					<div class="message">
+						<p>
+							Now that you have some practice under your belt, write out some <code>&lt;p&gt;</code> tags in your index file and style them using the bootstrap classes from above.&nbsp;&nbsp;Try styling some <code>&lt;h1&gt;,&lt;h2&gt;,...,&lt;h6&gt;</code> tags as well.
+						</p>
+					</div>
+				</blockquote>
 		</blockquote>
 	</section>
 	<section class="step next_step">
 		<h1>Next Step:</h1>
-		<p>In the next section, we will be styling buttons and forms.</p>
+		<p>In the next section, we will be styling form elements.</p>
 		<p class="link">Go to <a ui-sref="home.formElements" ng-click="changeState('home.formElements')">Form Elements</a></p>
 	</section>
 	<div class="back">

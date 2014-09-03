@@ -4,6 +4,9 @@
 .textCenter {
   text-align: center; }
 
+.textRight {
+  text-align: right; }
+
 .pointer {
   cursor: pointer; }
 
@@ -65,5 +68,4 @@ main .steps input {
   padding: 5px 0; }
 main .steps .changeResult {
   font-size: 1.5em;
-  padding: 10px 0;
-  border: 2px solid #000; }
+  padding: 10px; }

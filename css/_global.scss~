@@ -8,6 +8,10 @@
 	text-align: center;
 }
 
+.textRight {
+	text-align: right;
+}
+
 .pointer {
 	cursor: pointer;
 }
