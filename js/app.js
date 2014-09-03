@@ -28,9 +28,9 @@ angular.module("introToBootstrapApp", [
 				url: '/bootstrap-basics',
 				templateUrl: 'views/02-bootstrap-basics.html'
 			})
-			.state('home.formsButtons', {
-				url: '/forms-buttons',
-				templateUrl: 'views/03-forms-buttons.html'
+			.state('home.formElements', {
+				url: '/form-elements',
+				templateUrl: 'views/03-form-elements.html'
 			})
 			.state('home.listsTables', {
 				url: '/getting-started',

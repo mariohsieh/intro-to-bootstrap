@@ -13,8 +13,8 @@ angular.module("allControllers", [])
 						return 'home.gettingStarted';
 					case '/bootstrap-basics':
 						return 'home.bootstrapBasics';
-					case '/forms-buttons':
-						return 'home.formsButtons';							
+					case '/form-elements':
+						return 'home.formElements';							
 					default:
 						return addy;
 				}
@@ -40,8 +40,8 @@ angular.module("allControllers", [])
 				"state":	"home.bootstrapBasics"
 			},			
 			{ 
-				"title": "Forms & Buttons",
-				"state":	"home.formsButtons"
+				"title": "Form Elements",
+				"state":	"home.formElements"
 			}
 /*			
 			{ 
