@@ -21,4 +21,21 @@ angular.module("allDirectives", [])
 			replace: false,
 			link: link
 		}
-	});	
+	})
+
+	.directive("exampleTable", function() {
+		
+		function link(scope, elem, attr) {		
+			
+		}
+		
+		return {
+			restrict: 'E',
+			replace: true,
+			scope: {
+				class: '=',
+			},
+			templateUrl: 'views/exampleTable.html',
+			link: link
+		}		
+	});
