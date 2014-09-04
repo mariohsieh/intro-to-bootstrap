@@ -19,6 +19,8 @@ angular.module("allControllers", [])
 						return 'home.tables';													
 					case '/grid-system':
 						return 'home.gridSystem';	
+					case '/resources':
+						return 'home.resources';							
 					default:
 						return addy;
 				}
@@ -54,7 +56,7 @@ angular.module("allControllers", [])
 			{ 
 				"title": "Grid System",
 				"state":	"home.gridSystem"
-			}
+			},
 /* 
 			{ 
 				"title": "Column Offsets",
@@ -64,11 +66,11 @@ angular.module("allControllers", [])
 				"title": "Create Webpage from Mockup",
 				"state":	"home.createWebpage"
 			}, 	
+*/ 
 			{ 
 				"title": "Resources",
 				"state":	"home.resources"
 			}
-*/ 
 		];
 		
 		$scope.changeState = function(state) {
