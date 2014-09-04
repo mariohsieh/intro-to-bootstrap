@@ -17,6 +17,8 @@ angular.module("allControllers", [])
 						return 'home.formElements';	
 					case '/tables':
 						return 'home.tables';													
+					case '/grid-system':
+						return 'home.gridSystem';	
 					default:
 						return addy;
 				}
@@ -48,12 +50,12 @@ angular.module("allControllers", [])
 			{ 
 				"title": "Tables",
 				"state":	"home.tables"
-			}
-/*			
+			},			
 			{ 
 				"title": "Grid System",
 				"state":	"home.gridSystem"
-			},
+			}
+/* 
 			{ 
 				"title": "Column Offsets",
 				"state":	"home.columnOffsets"

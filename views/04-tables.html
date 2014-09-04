@@ -65,26 +65,52 @@
 				<blockquote>
 					<div class="message">
 						<p>
-							
-						</p>			
+							In addition to styling the whole <code>table</code>, we can also create hover states for each row:
+						</p>
+						<pre><br />&lt;table class="table table-hover"&gt;<br />&nbsp;&nbsp;...<br />&lt;/table&gt;<br /><br /></pre>
+						<example-table class="table table-hover"></example-table>
+						<p>
+							Contextual colors can also be applied to each <code>tr</code>.&nbsp;&nbsp;This also works with <code>th</code> and <code>td</code>:
+						</p>
+						<pre><br />&lt;table class="table"&gt;<br />&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="warning"&gt;<br />&nbsp;&nbsp;...<br />&nbsp;&nbsp;&lt;tr class="info"&gt;<br />&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="danger"&gt;<br />&nbsp;&nbsp;...<br />&lt;/table&gt;<br /><br /></pre>
+						<example-table class="table" color1="warning" color2="info" color3="danger"></example-table>
+					</div>					
+				</blockquote>				
+			</div>
+			<a name="step3"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 3</span></h1>
+				<blockquote>
+					<div class="message">				
+						<p>
+							Using the input box below, practice styling the example table: <br />(Note: you can style the text and background as well)
+						</p>
+						<input class="block center text-center" maxlength='50' ng-model="tablePractice" />
+						<pre><br />&lt;table class='{{tablePractice}}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/table&gt;<br /><br /></pre>
+						<table class="center {{tablePractice}}">
+							<thead>
+								<tr><th>A</th><th>B</th><th>C</th></tr>
+							</thead>
+							<tbody>
+								<tr><td>1</td><td>2</td><td>3</td></tr>
+								<tr><td>4</td><td>5</td><td>6</td></tr>
+								<tr><td>7</td><td>8</td><td>9</td></tr>
+							</tbody>
+						</table>
+						<p>
+							When you are comfortable, make a table on your index page and style them with Bootstrap classes.
+						</p>		
 					</div>
 				</blockquote>
 			</div>	
 		</blockquote>
 	</section>
 	<section class="step next_step">
-		
+		<h1>Next Step:</h1>
+		<p>In the next section, we will be working with the grid system.</p>
+		<p class="link">Go to <a ui-sref="home.gridSystem" ng-click="changeState('home.gridSystem')">Grid System</a></p>
 	</section>
+	<div class="back">
+		Back to <a class="back" ui-sref="home.formElements" ng-click="changeState('home.formElements')">Form Elements</a></p>
+	</div>	
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
