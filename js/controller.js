@@ -63,7 +63,7 @@ angular.module("allControllers", [])
 				"state":	"home.columnOffsets"
 			},
 			{ 
-				"title": "Create Webpage from Mockup",
+				"title": "Create Webpage",
 				"state":	"home.createWebpage"
 			}, 	
 */ 
