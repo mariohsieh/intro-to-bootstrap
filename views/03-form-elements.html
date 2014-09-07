@@ -35,7 +35,6 @@
 						<p>
 							Bootstrap has four sizes of buttons:
 						</p>
-						<!--extra small, small, default, and large-->
 						<ul class="inlineList textCenter">
 							<li>
 								<p>x-small</p>
@@ -51,7 +50,10 @@
 								<button class="btn btn-lg btn-primary">click</button>
 							</li>
 						</ul>
+						<p>
 							We can set the sizes by adding an additional class: <code>btn-xs, btn-sm, and btn-lg</code>.  The default size does not require any additional classes.
+						</p>	
+						<pre><br>&lt;button class="btn btn-xs"&gt;click&lt;/button&gt;<br>&lt;button class="btn btn-sm"&gt;click&lt;/button&gt;<br>&lt;button class="btn"&gt;click&lt;/button&gt;<br>&lt;button class="btn btn-lg"&gt;click&lt;/button&gt;<br><br></pre>	
 						<p>
 							Buttons can also be stylized with contextual colors.  The prefix for buttons is <code>btn-</code>. 
 						</p>
@@ -79,15 +81,15 @@
 						</p>
 						<button class="center block btn btn-primary active">active button</button>
 						<p>
-							Or disable the button by adding the attribute: <code>disabled="disabled"</code>:
-						</p>						
-						<button class="center block btn btn-success" disabled="disabled">disabled button</button>
-						<p>
 							In the input field below, style the example button:
 						</p>
 						<input type="text" class="center block textCenter" maxlength='40' ng-model="buttonChange" />
-						<pre class="textCenter"><br /><code>&lt;button class='{{buttonChange}}'&gt;click&lt;/button&gt;</code><br /><br /></pre>
-						<button class="center block {{buttonChange}}">click</button>
+						<pre><br /><code>&lt;button class='{{buttonChange}}'&gt;click&lt;/button&gt;</code><br /><br /></pre>
+						<button class="center block {{buttonChange}}">click</button>						
+						<p>
+							We can also disable the button by adding the attribute: <code>disabled="disabled"</code>:
+						</p>
+						<button class="center block btn btn-success" disabled="disabled">disabled button</button>
 						<p>
 							Now create some buttons of different sizes and colors in your index page when you are comfortable with the syntax.
 						</p>
