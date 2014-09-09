@@ -73,3 +73,62 @@ main .steps input {
 main .steps .changeResult {
   font-size: 1.5em;
   padding: 10px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
+
+@keyframes exitToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1; }
+
+  to {
+    transform: translateX(-25%);
+    opacity: .5; } }
+
+@keyframes enterFromRight {
+  from {
+    transform: translateX(25%);
+    opacity: 0; }
+
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+main[ui-view].ng-enter {
+  animation: fadeIn .5s ease-out;
+  z-index: 900; }
+
+/*
+main[ui-view].ng-leave {
+	animation: fadeOut .5s ease-out;
+	z-index: 1000;
+}
+*/
+/*
+main[ui-view].ng-enter, main[ui-view].ng-leave {
+	transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+main[ui-view].ng-enter, main[ui-view].ng-leave-active {
+	opacity: 0;
+}
+
+main[ui-view].ng-enter-active, main[ui-view].ng-leave {
+	opacity: 1;
+}
+*/

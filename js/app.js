@@ -1,6 +1,7 @@
 angular.module("introToBootstrapApp", [
 	// dependency injection
 	'ui.router',
+	'ngAnimate',
 	'allControllers',
 	'allDirectives'
 	])
