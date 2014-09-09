@@ -35,7 +35,13 @@ angular.module("introToBootstrapApp", [
 			.state('home.tables', {
 				url: '/tables',
 				templateUrl: 'views/04-tables.html'
+			})
+/*			
+			.state('home.navigation-bars', {
+				url: '/navigation-bars',
+				templateUrl: 'views/05-navigation-bars.html'
 			})			
+*/ 
 			.state('home.gridSystem', {
 				url: '/grid-system',
 				templateUrl: 'views/05-grid-system.html'

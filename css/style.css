@@ -44,6 +44,9 @@ a {
   .inlineList li button {
     vertical-align: top; }
 
+.toc > ul {
+  margin-top: 16px; }
+
 main figure img {
   display: inline-block;
   height: 150px;

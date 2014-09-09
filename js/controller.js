@@ -76,6 +76,7 @@ angular.module("allControllers", [])
 		$scope.changeState = function(state) {
 			$scope.currentState = state;
 			//console.log($scope.currentState);
+			window.scrollTo(0,0);
 		}
 			
 		$scope.isCurrent = function(state) {

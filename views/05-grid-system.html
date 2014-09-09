@@ -45,8 +45,47 @@
 						</p>
 						<h3>Rows and Columns</h3>
 						<p>
-							
+							Page layout is handled by defining an HTML element (usually a <code>div</code> but can also use <code>section</code>, <code>article</code>, <code>aside</code>, etc...) of class <code>row</code> and nesting a column(s) underneath as a direct child(ren).
 						</p>
+						<pre><br>&lt;div class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/div&gt;<br><br>NOTE: not actually how to write columns, just placeholder text<br><br></pre>
+						<p>
+							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;If there are multiple columns in a row, any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
+						</p>
+						<table class="center table">
+							<thead>
+								<tr>
+									<th>Screen Size</th>
+									<th>Code to write</th>
+									<th>Screen Width</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Extra Small</td>
+									<td>xs</td>
+									<td>less than 768px</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>sm</td>
+									<td>768px and up</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>md</td>
+									<td>992px and up</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>lg</td>
+									<td>1200px and up</td>
+								</tr>										
+							</tbody>
+						</table>
+						<p>
+							Now let's take a look at some examples:
+						</p>
+						<pre><br></pre>
 					</div>
 				</blockquote>
 			</div>
