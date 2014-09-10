@@ -85,13 +85,39 @@
 						</table>
 						<p>
 							Now let's take a look at some examples:<br>
-							(The following columns have been styled with a <code>background-color</code> color and <code>height: 300px</code> to see the column dimensions better.&nbsp;&nbsp;Also, <code>container</code> is in use)
+							(The following columns have been styled with a <code>background-color</code> and <code>height: 300px</code> to see the column dimensions better.&nbsp;&nbsp;Also, <code>container</code> is in use)
 						</p>
 						<pre><em>One column that spans the entire width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/one-column.png" data-img-click />
+						</figure>
+						<pre><em>Two columns of different widths</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-9"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/two-columns.png" data-img-click />
+						</figure>						
 						<pre><em>Three columns of equal width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- first column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- second column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- third column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/three-columns.png" data-img-click />
+						</figure>
+						<p>Now looking at the profile page created in the Front End Curriculum, you can re-organize the page layout using Bootstrap:
+						</p>
+						<pre><br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;header class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- header content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- left column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- right column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/body&gt;<br><br></pre>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/profile-page.jpg" data-img-click />
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/profile-bootstrap.png" data-img-click />
+						</figure>
 					</div>
 				</blockquote>
 			</div>
+			<a name="step1"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 2</span></h1>
+				<blockquote>
+					<div class="message">
+						<h3>Column Offsets</h3>
+					</div>
+				</blockquote>
+			</div>			
 		</blockquote>		
 	</section>
 	<section class="step next_step">
@@ -103,3 +129,7 @@
 		Back to <a class="back" ui-sref="home.tables" ng-click="changeState('home.tables')">Tables</a></p>
 	</div>
 </div>
+
+
+
+
