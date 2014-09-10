@@ -39,6 +39,7 @@
 						<figure class="text-center">
 							<img class="pointer" alt="compare-buttons" src="img/screenshots/container-example.png" data-img-click /	>
 							<img class="pointer" alt="compare-tables" src="img/screenshots/container-fluid-example.png" data-img-click />
+							<figurecaption>In both examples, the container has been applied to the <code>body</code> HTML tag.</figurecaption>
 						</figure>
 						<p>
 							If you set an HTML element with class <code>container</code>, all the nested content inside will be confined to the horizontal boundaries set by the container.
@@ -47,7 +48,7 @@
 						<p>
 							Page layout is handled by defining an HTML element (usually a <code>div</code> but can also use <code>section</code>, <code>article</code>, <code>aside</code>, etc...) of class <code>row</code> and nesting a column(s) underneath as a direct child(ren).
 						</p>
-						<pre><br>&lt;div class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/div&gt;<br><br>NOTE: not actually how to write columns, just placeholder text<br><br></pre>
+						<pre><br>&lt;div class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/div&gt;<br><br><em>NOTE: not actually how to write columns, just placeholder text</em><br><br></pre>
 						<p>
 							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;If there are multiple columns in a row, any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
 						</p>
@@ -83,9 +84,11 @@
 							</tbody>
 						</table>
 						<p>
-							Now let's take a look at some examples:
+							Now let's take a look at some examples:<br>
+							(The following columns have been styled with a <code>background-color</code> color and <code>height: 300px</code> to see the column dimensions better.&nbsp;&nbsp;Also, <code>container</code> is in use)
 						</p>
-						<pre><br></pre>
+						<pre><em>One column that spans the entire width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<pre><em>Three columns of equal width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- first column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- second column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- third column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
 					</div>
 				</blockquote>
 			</div>
