@@ -113,15 +113,15 @@
 						<p>
 							The following example login form demonstrates this grouping:
 						</p>
-						<pre><br />&lt;form&gt;<br />&nbsp;&nbsp;&lt;div class="form-group"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="usernameInput"&gt;Username&lt;/label&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="usernameInput" class="form-control" /&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div class="form-group"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="passwordInput"&gt;Password&lt;/label&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="passwordInput" class="form-control" /&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;button type="submit" class="btn btn-lg btn-primary"&gt;Login&lt;/button&gt;<br />&lt;/form&gt;<br /><br /></pre>
+						<pre><br />&lt;form&gt;<br>&nbsp;&nbsp;&lt;div class="form-group"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="usernameInput"&gt;Username&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="usernameInput" class="form-control"&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="form-group"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="passwordInput"&gt;Password&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" id="passwordInput" class="form-control"&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;button type="submit" class="btn btn-lg btn-primary"&gt;Login&lt;/button&gt;<br>&lt;/form&gt;<br><br></pre>
 						<form>
 							<div class="form-group">
 								<label for="usernameInput">Username</label>
-								<input id="usernameInput" class="form-control" />
+								<input type="text" id="usernameInput" class="form-control">
 							</div>
 							<div class="form-group">
 								<label for="passwordInput">Password</label>
-								<input id="passwordInput" class="form-control" />
+								<input type="password" id="passwordInput" class="form-control">
 							</div>
 							<button type="submit" class="btn btn-lg btn-primary">Login</button>
 						</form>
@@ -129,7 +129,7 @@
 						<p>
 							The class <code>form-control</code> can also be used for <code>select</code>:
 						</p>
-						<pre><br />&lt;select class="form-control"&gt;<br />&nbsp;&nbsp;&lt;option&gt;A&lt;/option&gt;<br />&nbsp;&nbsp;&lt;option&gt;B&lt;/option&gt;<br />&nbsp;&nbsp;&lt;option&gt;B&lt;/option&gt;<br />&nbsp;&nbsp;&lt;option&gt;D&lt;/option&gt;<br />&lt;/select&gt;
+						<pre><br>&lt;select class="form-control"&gt;<br>&nbsp;&nbsp;&lt;option&gt;A&lt;/option&gt;<br>&nbsp;&nbsp;&lt;option&gt;B&lt;/option&gt;<br>&nbsp;&nbsp;&lt;option&gt;B&lt;/option&gt;<br>&nbsp;&nbsp;&lt;option&gt;D&lt;/option&gt;<br>&lt;/select&gt;
 						</pre>
 						<select class="form-control">
 							<option>A</option>
@@ -141,18 +141,18 @@
 						<p>
 							<code>textarea</code> can also be styled with <code>form control</code>.
 						</p>
-						<pre><br />&lt;textarea class="form-control"&gt;&lt;/textarea&gt;<br /><br /></pre>
+						<pre><br />&lt;textarea class="form-control"&gt;&lt;/textarea&gt;<br><br></pre>
 						<textarea class="block center form-contorl" rows="5" style="width: 50%;resize: none;"></textarea>
 						<p>
 							It is possible to adjust the height of <code>input</code> and <code>select</code> by adding the class <code>input-sm</code> or <code>input-lg</code>
 						</p>
-						<pre><br />&lt;input type="text" class="form-control input-sm" /&gt;<br />&lt;input type="text" class="form-control" /&gt;<br />&lt;input type="text" class="form-control input-lg" /&gt;<br /><br /></pre>
+						<pre><br>&lt;input type="text" class="form-control input-sm"&gt;<br>&lt;input type="text" class="form-control"&gt;<br>&lt;input type="text" class="form-control input-lg"&gt;<br><br></pre>
 						<p>
-							<input type="text" class="textCenter form-control input-sm" placeholder="small input height" />
+							<input type="text" class="textCenter form-control input-sm" placeholder="small input height">
 						</p><p>
-							<input type="text" class="textCenter form-control" placeholder="default input height" />
+							<input type="text" class="textCenter form-control" placeholder="default input height">
 						</p><p>
-							<input type="text" class="textCenter form-control input-lg" placeholder="large input height" />
+							<input type="text" class="textCenter form-control input-lg" placeholder="large input height">
 						</p>
 						<p>
 							This is just a sample of all the different styles for <code>input</code>.  Please look at the official Bootstrap docs <a target="_blank" href="http://getbootstrap.com/css/?#forms">here</a> for the complete list.

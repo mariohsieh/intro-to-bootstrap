@@ -6,12 +6,12 @@
 		<ul>
 			<li>
 				<div class="message">
-					<p>Containers, rows, and columns of the grid system</p>
+					<p>Containers, rows, and columns</p>
 				</div>
 			</li>
 			<li>
 				<div class="message">
-					<p>Column offsets and ordering</p>
+					<p>Column offsets</p>
 				</div>
 			</li>
 		</ul>
@@ -50,7 +50,7 @@
 						</p>
 						<pre><br>&lt;div class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/div&gt;<br><br><em>NOTE: not actually how to write columns, just placeholder text</em><br><br></pre>
 						<p>
-							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;If there are multiple columns in a row, any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
+							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;If there are multiple columns in a row, they will stack from left to right.&nbsp;&nbsp;Any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
 						</p>
 						<table class="center table">
 							<thead>
@@ -87,6 +87,10 @@
 							Now let's take a look at some examples:<br>
 							(The following columns have been styled with a <code>background-color</code> and <code>height: 300px</code> to see the column dimensions better.&nbsp;&nbsp;Also, <code>container</code> is in use)
 						</p>
+						<pre><em>One column that spans 4-units wide</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/one-left-column.png" data-img-click />
+						</figure>						
 						<pre><em>One column that spans the entire width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
 							<img class="pointer" alt="compare-buttons" src="img/screenshots/one-column.png" data-img-click />
@@ -109,12 +113,26 @@
 					</div>
 				</blockquote>
 			</div>
-			<a name="step1"></a>
+			<a name="step2"></a>
 			<div class="step">
 				<h1><span class="prefix">Step 2</span></h1>
 				<blockquote>
 					<div class="message">
 						<h3>Column Offsets</h3>
+						<p>
+							So far we have only created page layouts that have content starting from the left.&nbsp;&nbsp;What if we want a centered single column 6-units wide?&nbsp;&nbsp;Or how about a single 3-units wide column on the right side of the page?&nbsp;&nbsp;This is where column offsets come in.<br><br>Offsets allow columns to move to the right so the first column isn't always positioned starting from the left.  We can offset columns by adding an additional class <code>col-XX-offset-Y</code>.  The 'XX' and 'Y' here also refer to screen size and number of units respectively.<br><br>Let's look at this example log-in screen:
+						</p>
+						<pre><br />&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class=""col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>						
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/login-screen.png" data-img-click />
+						</figure>
+						<p>
+							As we can see, the content is nested inside a single column 4-untis wide that displays on the left.  If we were to center this 4-unit column, we can add an offset of 4 units so the column occupies the 5,6,7,8 units in a 12-unit horizontal space.  Therefore, it wil be centered.
+						</p>
+						<pre><br />&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class=""col-md-4 col-md-offset-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/centered-login-screen.png" data-img-click />
+						</figure>						
 					</div>
 				</blockquote>
 			</div>			
