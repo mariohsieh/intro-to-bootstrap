@@ -44,8 +44,20 @@ a {
   .inlineList li button {
     vertical-align: top; }
 
+#table_of_contents ul {
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px !important; }
+
 .toc > ul {
-  margin-top: 16px; }
+  margin-top: 16px;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px !important; }
 
 main figure img {
   display: inline-block;

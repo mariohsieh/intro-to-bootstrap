@@ -18,7 +18,13 @@ angular.module("allControllers", [])
 					case '/tables':
 						return 'home.tables';													
 					case '/grid-system':
-						return 'home.gridSystem';	
+						return 'home.gridSystem';
+					case '/create-webpage':
+						return 'home.createWebpage';						
+/*							
+					case '/header-content':
+						return 'home.headerContent';
+*/ 
 					case '/resources':
 						return 'home.resources';							
 					default:
@@ -57,15 +63,15 @@ angular.module("allControllers", [])
 				"title": "Grid System",
 				"state":	"home.gridSystem"
 			},
-/* 
-			{ 
-				"title": "Column Offsets",
-				"state":	"home.columnOffsets"
-			},
 			{ 
 				"title": "Create Webpage",
 				"state":	"home.createWebpage"
-			}, 	
+			},
+/*			
+			{ 
+				"title": "Header Content",
+				"state":	"home.headerContent"
+			}, 			
 */ 
 			{ 
 				"title": "Resources",
