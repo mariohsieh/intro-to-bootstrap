@@ -37,8 +37,8 @@
 						<p>Bootstrap offers two types of container classes: <code>container</code> for centered fixed-width content, or <code>container-fluid</code> for full-width content.&nbsp;&nbsp;Look at the two images below for comparison.&nbsp;&nbsp;The red area is where your content would appear.
 						</p>
 						<figure class="text-center">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/container-example.png" data-img-click /	>
-							<img class="pointer" alt="compare-tables" src="img/screenshots/container-fluid-example.png" data-img-click />
+							<img class="pointer" alt="Container Example" src="img/screenshots/container-example.png" data-img-click /	>
+							<img class="pointer" alt="Container Fluid Example" src="img/screenshots/container-fluid-example.png" data-img-click />
 							<figurecaption>In both examples, the container has been applied to the <code>body</code> HTML tag.</figurecaption>
 						</figure>
 						<p>
@@ -46,9 +46,9 @@
 						</p>
 						<h3>Rows and Columns</h3>
 						<p>
-							Page layout is handled by defining an HTML element (usually a <code>div</code> but can also use <code>section</code>, <code>article</code>, <code>aside</code>, etc...) of class <code>row</code> and nesting a column(s) underneath as a direct child(ren).
+							Page layout is handled by defining an HTML element (can use <code>div</code> but more semantic HTML5 tags will work as well) of class <code>row</code> and nesting a column(s) underneath as a direct child(ren).
 						</p>
-						<pre><br>&lt;div class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/div&gt;<br><br><em>NOTE: not actually how to write columns, just placeholder text</em><br><br></pre>
+						<pre><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/section&gt;<br><br><em>NOTE: not actually how to write columns, just placeholder text</em><br><br></pre>
 						<p>
 							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;If there are multiple columns in a row, they will stack from left to right.&nbsp;&nbsp;Any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
 						</p>
@@ -87,28 +87,28 @@
 							Now let's take a look at some examples:<br>
 							(The following columns have been styled with a <code>background-color</code> and <code>height: 300px</code> to see the column dimensions better.&nbsp;&nbsp;Also, <code>container</code> is in use)
 						</p>
-						<pre><em>One column that spans 4-units wide</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<pre><em>One column that spans 4-units wide</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/one-left-column.png" data-img-click />
+							<img class="pointer" alt="One Column on left" src="img/screenshots/one-left-column.png" data-img-click />
 						</figure>						
-						<pre><em>One column that spans the entire width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<pre><em>One column that spans the entire width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/one-column.png" data-img-click />
+							<img class="pointer" alt="One Column" src="img/screenshots/one-column.png" data-img-click />
 						</figure>
-						<pre><em>Two columns of different widths</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-9"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<pre><em>Two columns of different widths</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-9"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/two-columns.png" data-img-click />
+							<img class="pointer" alt="Two Columns" src="img/screenshots/two-columns.png" data-img-click />
 						</figure>						
-						<pre><em>Three columns of equal width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- first column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- second column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- third column content here--&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<pre><em>Three columns of equal width</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- first column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- second column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- third column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/three-columns.png" data-img-click />
+							<img class="pointer" alt="Three Columns" src="img/screenshots/three-columns.png" data-img-click />
 						</figure>
 						<p>Now looking at the profile page created in the Front End Curriculum, you can re-organize the page layout using Bootstrap:
 						</p>
-						<pre><br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;header class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- header content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- left column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- right column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/body&gt;<br><br></pre>
+						<pre><br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;header class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- header content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- left column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- right column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/body&gt;<br><br></pre>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/profile-page.jpg" data-img-click />
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/profile-bootstrap.png" data-img-click />
+							<img class="pointer" alt="Profile Page" src="img/screenshots/profile-page.jpg" data-img-click />
+							<img class="pointer" alt="Profile Page with Bootstrap" src="img/screenshots/profile-bootstrap.png" data-img-click />
 						</figure>
 					</div>
 				</blockquote>
@@ -122,16 +122,16 @@
 						<p>
 							So far we have only created page layouts that have content starting from the left.&nbsp;&nbsp;What if we want a centered single column 6-units wide?&nbsp;&nbsp;Or how about a single 3-units wide column on the right side of the page?&nbsp;&nbsp;This is where column offsets come in.<br><br>Offsets allow columns to move to the right so the first column isn't always positioned starting from the left.  We can offset columns by adding an additional class <code>col-XX-offset-Y</code>.  The 'XX' and 'Y' here also refer to screen size and number of units respectively.<br><br>Let's look at this example log-in screen:
 						</p>
-						<pre><br />&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class=""col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>						
+						<pre><br />&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class=""col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>						
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/login-screen.png" data-img-click />
+							<img class="pointer" alt="Login Screen" src="img/screenshots/login-screen.png" data-img-click />
 						</figure>
 						<p>
 							As we can see, the content is nested inside a single column 4-untis wide that displays on the left.  If we were to center this 4-unit column, we can add an offset of 4 units so the column occupies the 5,6,7,8 units in a 12-unit horizontal space.  Therefore, it wil be centered.
 						</p>
-						<pre><br />&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;div class=""col-md-4 col-md-offset-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/section&gt;<br><br></pre>
+						<pre><br />&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class=""col-md-4 col-md-offset-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/centered-login-screen.png" data-img-click />
+							<img class="pointer" alt="Centered Login Screen" src="img/screenshots/centered-login-screen.png" data-img-click />
 						</figure>						
 					</div>
 				</blockquote>
@@ -157,8 +157,8 @@
 	</section>
 	<section class="step next_step">
 		<h1>Next Step:</h1>
-		<p>In the next section, we will recreate a webpage from a mockup.</p>
-		<p class="link">Go to <a ui-sref="home.createWebpage" ng-click="changeState('home.createWebpage')">Create Webpage</a></p>
+		<p>In the next section, we will style an HTML page to recreate a mockup.</p>
+		<p class="link">Go to <a ui-sref="home.styleWebpage" ng-click="changeState('home.styleWebpage')">Style Webpage</a></p>
 	</section>
 	<div class="back">
 		Back to <a class="back" ui-sref="home.tables" ng-click="changeState('home.tables')">Tables</a></p>

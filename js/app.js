@@ -45,9 +45,9 @@ angular.module("introToBootstrapApp", [
 				url: '/grid-system',
 				templateUrl: 'views/05-grid-system.html'
 			})
-			.state('home.createWebpage', {
-				url: '/create-webpage',
-				templateUrl: 'views/06-create-webpage.html'
+			.state('home.styleWebpage', {
+				url: '/style-webpage',
+				templateUrl: 'views/06-style-webpage.html'
 			})
 /*			
 			.state('home.headerContent', {
