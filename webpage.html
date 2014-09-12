@@ -7,16 +7,19 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<style>
+			.container-fluid {
+				padding: 0;
+			}
 			header {
 				background-color: rgb(220,220,220);
 			}
-			header > .row:first-of-type > section {
+			header > .row:first-of-type > article {
 				height: 69px;
 			}
-			header > .row:first-of-type > section > * {
+			header > section:first-of-type > article > * {
 				margin-top: 20px;
 			}
-			header > .row:last-of-type > section > * {
+			header > section:last-of-type p {
 				font-size: 1.5em;
 			}
 		</style>
@@ -55,7 +58,7 @@
 			</section>
 		</main>
 		<footer>
-		
+			&copy; 2014 RailsBridge
 		</footer>
 
 	</body>
