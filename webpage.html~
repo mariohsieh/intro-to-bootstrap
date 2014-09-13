@@ -7,10 +7,7 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<style>
-			.container-fluid {
-				padding: 0;
-			}
-			header {
+			header .row, footer {
 				background-color: rgb(220,220,220);
 			}
 			header > .row:first-of-type > article {
@@ -22,11 +19,32 @@
 			header > section:last-of-type p {
 				font-size: 1.5em;
 			}
+			.sfPhotos {
+				background-color: black;
+				padding: 20px 0;
+			}
+			img {
+				width: 100%;
+			}
+			.list-unstyled li {
+				margin-left: 10px;
+			}
+			footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 15px 0 50px 0;
+			}
+			footer hr {
+				width: 60%;
+				border-top: 1px solid black;
+			}
 		</style>
 	</head>
 	<body class="container-fluid">
 
-		<header>
+		<header role="mainHeader">
 			<section class="row">
 				<article class="col-md-5 col-md-offset-2">
 					<h1>San Francisco</h1>
@@ -46,19 +64,39 @@
 		</header>
 
 		<main>
-			<section class="row">
-				<article class="col-md-6 col-md-offset-6">
-					<figure>
-						<!-- three images -->
-					</figure>
+			<section class="sfPhotos row">
+				<article class="col-md-2 col-md-offset-3">
+						<img alt="Bay Bridge" src="img/sf/bay-bridge.jpg">
+				</article>
+				<article class="col-md-2">
+						<img alt="Palace of Fine Arts" src="img/sf/palace-of-fine-arts.jpg">
+				</article>
+				<article class="col-md-2">
+						<img alt="Legion of Honor" src="img/sf/legion-of-honor.jpg">
 				</article>
 			</section>
-			<section>
+			<section class="row">
+				<article class="col-md-3 col-md-offset-2">
+					<h4>Places of Interest</h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Palace of Fine Arts</a></li>
+						<li><a href="#">Golden Gate Bridge</a></li>
+						<li><a href="#">Fisherman's Wharf</a></li>
+						<li><a href="#">Land's End</a></li>
+						<li><a href="#">Legion of Honor</a></li>
+						<li><a href="#">Golden Gate Park</a></li>
+						<li><a href="#">Bay Bridge</a></li>
+						<li><a href="#">Painted Ladies</a></li>
+					</ul>
+				</article>
+				<article class="col-md-5">
 
+				</article>
 			</section>
 		</main>
-		<footer>
-			2014 &copy; All Rights Reserved RailsBridge
+		<footer class="row text-center">
+			<hr>
+			&copy; 2014 RailsBridge
 		</footer>
 
 	</body>
