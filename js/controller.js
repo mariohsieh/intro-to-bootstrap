@@ -19,8 +19,8 @@ angular.module("allControllers", [])
 						return 'home.tables';													
 					case '/grid-system':
 						return 'home.gridSystem';
-					case '/style-webpage':
-						return 'home.styleWebpage';						
+					case '/create-webpage':
+						return 'home.createWebpage';						
 /*							
 					case '/header-content':
 						return 'home.headerContent';
@@ -64,8 +64,8 @@ angular.module("allControllers", [])
 				"state":	"home.gridSystem"
 			},
 			{ 
-				"title": "Style Webpage",
-				"state":	"home.styleWebpage"
+				"title": "Create Webpage",
+				"state":	"home.createWebpage"
 			},
 /*			
 			{ 
