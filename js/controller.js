@@ -21,10 +21,6 @@ angular.module("allControllers", [])
 						return 'home.gridSystem';
 					case '/create-webpage':
 						return 'home.createWebpage';						
-/*							
-					case '/header-content':
-						return 'home.headerContent';
-*/ 
 					case '/resources':
 						return 'home.resources';							
 					default:
@@ -67,12 +63,6 @@ angular.module("allControllers", [])
 				"title": "Create Webpage",
 				"state":	"home.createWebpage"
 			},
-/*			
-			{ 
-				"title": "Header Content",
-				"state":	"home.headerContent"
-			}, 			
-*/ 
 			{ 
 				"title": "Resources",
 				"state":	"home.resources"
