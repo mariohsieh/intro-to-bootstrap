@@ -20,7 +20,9 @@ angular.module("allControllers", [])
 					case '/grid-system':
 						return 'home.gridSystem';
 					case '/create-webpage':
-						return 'home.createWebpage';						
+						return 'home.createWebpage';
+					case '/basic-layout':
+						return 'home.basicLayout';											
 					case '/resources':
 						return 'home.resources';							
 					default:
@@ -63,6 +65,10 @@ angular.module("allControllers", [])
 				"title": "Create Webpage",
 				"state":	"home.createWebpage"
 			},
+			{ 
+				"title": "Basic Layout",
+				"state":	"home.basicLayout"
+			},			
 			{ 
 				"title": "Resources",
 				"state":	"home.resources"

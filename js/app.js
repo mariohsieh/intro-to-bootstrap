@@ -49,12 +49,11 @@ angular.module("introToBootstrapApp", [
 				url: '/create-webpage',
 				templateUrl: 'views/06-create-webpage.html'
 			})
-/*			
-			.state('home.headerContent', {
-				url: '/header-content',
-				templateUrl: 'views/07-header-content.html'
-			})			
-*/ 
+			.state('home.basicLayout', {
+				url: '/basic-layout',
+				templateUrl: 'views/07-basic-layout.html'
+			})
+			
 			.state('home.resources', {
 				url: '/resources',
 				templateUrl: 'views/11-resources.html'
