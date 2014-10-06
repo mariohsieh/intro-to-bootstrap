@@ -22,7 +22,13 @@ angular.module("allControllers", [])
 					case '/create-webpage':
 						return 'home.createWebpage';
 					case '/basic-layout':
-						return 'home.basicLayout';											
+						return 'home.basicLayout';
+					case '/header-content':
+						return 'home.headerContent';
+					case '/main-content':
+						return 'home.mainContent';
+					case '/form-and-footer':
+						return 'home.formAndFooter';															
 					case '/resources':
 						return 'home.resources';							
 					default:
@@ -38,7 +44,7 @@ angular.module("allControllers", [])
 		// array to hold links
 		$scope.menus = [
 			{
-				"title": "Intro to Bootstrap",
+				"title": "Welcome",
 				"state":	"home.welcome"
 			},
 			{ 
@@ -68,6 +74,18 @@ angular.module("allControllers", [])
 			{ 
 				"title": "Basic Layout",
 				"state":	"home.basicLayout"
+			},			
+			{ 
+				"title": "Header Content",
+				"state":	"home.headerContent"
+			},
+			{ 
+				"title": "Main Content",
+				"state":	"home.mainContent"
+			},
+			{ 
+				"title": "Form & Footer",
+				"state":	"home.formAndFooter"
 			},			
 			{ 
 				"title": "Resources",

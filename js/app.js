@@ -53,7 +53,18 @@ angular.module("introToBootstrapApp", [
 				url: '/basic-layout',
 				templateUrl: 'views/07-basic-layout.html'
 			})
-			
+			.state('home.headerContent', {
+				url: '/header-content',
+				templateUrl: 'views/08-header-content.html'
+			})
+			.state('home.mainContent', {
+				url: '/main-content',
+				templateUrl: 'views/09-main-content.html'
+			})
+			.state('home.formAndFooter', {
+				url: '/form-and-footer',
+				templateUrl: 'views/10-form-and-footer.html'
+			})			
 			.state('home.resources', {
 				url: '/resources',
 				templateUrl: 'views/11-resources.html'
