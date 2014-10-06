@@ -20,9 +20,51 @@
 		<h1>Overview</h1>
 		<blockquote>
 			<div class="message">
-				
+				<p>
+					Before writing any code look at the mockup and determine the general areas of the webpage.&nbsp;&nbsp;Using HTML5 tags, where would you use the <code>header</code>, <code>main</code>, and <code>footer</code> tags to breakdown the mockup?&nbsp;&nbsp;Once you have determined that, write out the major areas on a new html page for the skeleton code.
+				</p>	
 			</div>
-			
+		</blockquote>
+	</section>	
+	<section class="steps">
+		<h1>Steps</h1>
+		<blockquote>
+			<a name="step1"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 1</span></h1>
+				<blockquote>
+					<div class="message">
+						<p>
+							Since Bootstrap uses a grid system of rows and columns,  I would organize my HTML accordingly as well.&nbsp;&nbsp;First identify the majors areas from top to bottom first, then figure out the columns within those areas from left to right.&nbsp;&nbsp;I have overlayed the mockup with colored blocks to mark the major areas:
+						</p>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/webpage-main-areas.png" data-img-click>
+						</figure>
+						<p>
+							Using the image above, let's write out the skeleton code for our webpage:
+						</p>
+						<pre><br>&lt;!doctype html&gt;<br>&lt;html lang="en"&gt;<br>&nbsp;&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Discover San Francisco&lt;/title&gt;<br>&nbsp;&nbsp;&lt;/head&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;main&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/footer&gt;<br>&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;
+						</pre>
+					</div>
+				</blockquote>
+			</div>
+			<a name="step2"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 2</span></h1>
+				<blockquote>
+					<div class="message">
+						<p>
+							Now that the general layout is done.  Let's determine where to create Bootstrap rows:
+						</p>
+						<figure class="textCenter">
+							<img class="pointer" alt="compare-buttons" src="img/screenshots/webpage-rows.png" data-img-click>
+						</figure>
+						<p>The HTML code should look like this:</p>
+						<pre><br>&lt;!doctype html&gt;<br>&lt;html lang="en"&gt;<br>&nbsp;&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Discover San Francisco&lt;/title&gt;<br>&nbsp;&nbsp;&lt;/head&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/footer&gt;<br>&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;
+						</pre>												
+					</div>
+				</blockquote>			
+			</div>
 		</blockquote>
 	</section>
 	<section class="step next_step">
@@ -31,6 +73,6 @@
 		<p class="link">Go to <a ui-sref="home.headerContent" ng-click="changeState('home.headerContent')">Header Content</a></p>
 	</section>
 	<div class="back">
-		Back to <a class="back" ui-sref="home.basicLayout" ng-click="changeState('home.basicLayout')">Basic Layout</a></p>
+		Back to <a class="back" ui-sref="home.createWebpage" ng-click="changeState('home.createWebpage')">Create Webpage</a></p>
 	</div>	
 </div>

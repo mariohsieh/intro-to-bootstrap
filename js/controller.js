@@ -44,7 +44,7 @@ angular.module("allControllers", [])
 		// array to hold links
 		$scope.menus = [
 			{
-				"title": "Welcome",
+				"title": "Introduction",
 				"state":	"home.welcome"
 			},
 			{ 
