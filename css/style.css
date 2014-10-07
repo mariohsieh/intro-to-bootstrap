@@ -133,19 +133,17 @@ main .resources ul li {
     transform: translateX(0);
     opacity: 1; } }
 
-/*
-main[ui-view].ng-enter, main[ui-view].ng-leave {
-	transition: all 0.5s ease-in;
-	-moz-transition: all 0.5s ease-in;
-	-o-transition: all 0.5s ease-in;
-	-webkit-transition: all 0.5s ease-in;
-}
+.ng-enter {
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in; }
 
-main[ui-view].ng-enter, main[ui-view].ng-leave-active {
-	opacity: 0;
-}
+.ng-enter {
+  opacity: 0; }
 
-main[ui-view].ng-enter-active, main[ui-view].ng-leave {
-	opacity: 1;
-}
-*/
+.ng-enter-stagger {
+  transition-delay: 0.1s; }
+
+.ng-enter-active {
+  opacity: 1; }
