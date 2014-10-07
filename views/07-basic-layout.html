@@ -54,12 +54,14 @@
 				<blockquote>
 					<div class="message">
 						<p>
-							Now that the general layout is done.  Let's determine where to create Bootstrap rows:
+							Now that the general layout is done, let's add a <code>container</code> and determine where to nest Bootstrap rows inside the major areas:
 						</p>
 						<figure class="textCenter">
 							<img class="pointer" alt="compare-buttons" src="img/screenshots/webpage-rows.png" data-img-click>
 						</figure>
-						<p>The HTML code should look like this:</p>
+						<p>
+							Looking at the image above, should a <code>container</code> or <code>container-fluid</code> be used?&nbsp;&nbsp;Since all the content is centered down the middle of the page, we could use a <code>container</code> but then the <code>background-color</code> across some of rows would also be centered.<br><br>We want the <code>background-color</code> to stretch across the width of the browser so we will use a <code>container-fluid</code> and offset the columns from the left so the content will be centered.<br><br>Here is how the code will look with a <code>container-fluid</code> added to the <code>body</code> and the rows nested under each major area:
+						</p>
 						<pre><br>&lt;!doctype html&gt;<br>&lt;html lang="en"&gt;<br>&nbsp;&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Discover San Francisco&lt;/title&gt;<br>&nbsp;&nbsp;&lt;/head&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="row"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/footer&gt;<br>&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;
 						</pre>												
 					</div>
