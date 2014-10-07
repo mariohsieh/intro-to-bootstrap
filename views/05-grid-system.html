@@ -34,23 +34,35 @@
 				<h1><span class="prefix">Step 1</span></h1>
 				<blockquote>
 					<div class="message">
+						<h3>Containers</h3>
 						<p>Bootstrap offers two types of container classes: <code>container</code> for centered fixed-width content, or <code>container-fluid</code> for full-width content.&nbsp;&nbsp;Look at the two images below for comparison.&nbsp;&nbsp;The red area is where your content would appear.
 						</p>
+						<pre><br>&lt;body class="container"&gt;<br>&nbsp;&nbsp;...<br>&lt;/body&gt;<br><br>&lt;body class="container-fluid"&gt;<br>&nbsp;&nbsp;...<br>&lt;/body&gt;<br><br></pre>						
 						<figure class="text-center">
 							<img class="pointer" alt="Container Example" src="img/screenshots/container-example.png" data-img-click /	>
 							<img class="pointer" alt="Container Fluid Example" src="img/screenshots/container-fluid-example.png" data-img-click />
-							<figurecaption>In both examples, the container has been applied to the <code>body</code> HTML tag.</figurecaption>
 						</figure>
 						<p>
-							If you set an HTML element with class <code>container</code>, all the nested content inside will be confined to the horizontal boundaries set by the container.
+							If you set an HTML element with a <code>container</code> class, all the nested content inside will be confined to the horizontal boundaries set by the container.<br><br>This is useful if you want all your content to be uniformly-centered throughout your web application.  
 						</p>
+						<br>
 						<h3>Rows and Columns</h3>
 						<p>
 							Page layout is handled by defining an HTML element (can use <code>div</code> but more semantic HTML5 tags will work as well) of class <code>row</code> and nesting a column(s) underneath as a direct child(ren).
 						</p>
 						<pre><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&nbsp;&nbsp;<em>column</em><br>&lt;/section&gt;<br><br><em>NOTE: not actually how to write columns, just placeholder text</em><br><br></pre>
 						<p>
-							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;If there are multiple columns in a row, they will stack from left to right.&nbsp;&nbsp;Any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
+							Columns are created based on the concept that there are 12 units across the horizontal space in a <code>row</code> and any one column can have a width between 1 and 12 units.&nbsp;&nbsp;The horizontal space of the row is defined by the width allowed from its parent HTML element.
+						</p>
+						<p>
+							If we were to create rows nested under the above examples of <code>container</code> and <code>container-fluid</code>, you can see the difference in horizontal space allowed.&nbsp;&nbsp;Thus, the width of 1-unit for a column nested under <code>container</code> will be shorter than one under <code>container-fluid</code>, given all else is equal.  
+						</p>
+						<figure class="text-center">
+							<img class="pointer" alt="Container Example with 12 units" src="img/screenshots/container-12.png" data-img-click>
+							<img class="pointer" alt="Container Fluid Example with 12 units" src="img/screenshots/container-fluid-12.png" data-img-click>
+						</figure>						
+						<p>
+							If there are multiple columns in a row, they will stack from left to right.&nbsp;&nbsp;Any column that exceeds the maximum 12 allowable units will wrap onto the next line.<br><br>To create a column, we define an HTML tag with a class of <code>col-XX-Y</code> where XX is the screen size and Y is the number of units for the width of the column (1 to 12).<br><br>Here is the breakdown for the different screen sizes Bootstrap uses:
 						</p>
 						<table class="center table">
 							<thead>
@@ -85,7 +97,7 @@
 						</table>
 						<p>
 							Now let's take a look at some examples:<br>
-							(The following examples will use 'medium' for screen size so please view in a browser at least 992px in width.  The columns have also been styled with a <code>background-color</code> and <code>height: 300px</code> to see the column dimensions better.&nbsp;&nbsp;Also, <code>container</code> is in use)
+							(The following examples will use 'medium' for screen size so please view in a browser at least 992px in width.  The columns have also been styled with a <code>background-color</code> and given a fixed <code>height</code> to see the column dimensions better.&nbsp;&nbsp;Also, assume these are all nested inside a <code>body</code> with <code>container</code> class)
 						</p>
 						<pre><em>One column that spans 4-units wide</em><br><br><br>&lt;section class="row"&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- column content here--&gt;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/section&gt;<br><br></pre>
 						<figure class="textCenter">
@@ -105,7 +117,7 @@
 						</figure>
 						<p>Now looking at the profile page created in the Front End Curriculum, you can re-organize the page layout using Bootstrap:
 						</p>
-						<pre><br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;header class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- header content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- left column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- right column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/body&gt;<br><br></pre>
+						<pre><br>&lt;body class="container"&gt;<br>&nbsp;&nbsp;&lt;header class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-12"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- header content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- left column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- right column content --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/body&gt;<br><br></pre>
 						<figure class="textCenter">
 							<img class="pointer" alt="Profile Page" src="img/screenshots/profile-page.jpg" data-img-click />
 							<img class="pointer" alt="Profile Page with Bootstrap" src="img/screenshots/profile-bootstrap.png" data-img-click />
