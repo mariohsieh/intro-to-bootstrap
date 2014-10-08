@@ -6,19 +6,21 @@
 		<title>Discover San Francisco</title>
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<style>
+		<style>			
 			header .row, footer {
 				background-color: rgb(220,220,220);
 			}
-			header > .row:first-of-type > article {
+			header > .row > article {
 				height: 69px;
 			}
-			header > section:first-of-type > article > * {
+			header > .row > article > * {
 				margin-top: 20px;
 			}
-			header > section:last-of-type p {
-				font-size: 1.5em;
+			header span {
+				font-size: .75em;
+				font-style: italic;
 			}
+			
 			main {
 				padding-bottom: 20px;
 			}
@@ -33,10 +35,12 @@
 				margin-left: 10px;
 			}
 			footer {
-/*				position: fixed;
+/*
+				position: fixed;
 				bottom: 0;
 				left: 0;
-				right: 0;*/
+				right: 0;
+*/
 				padding: 15px 0 50px 0;
 			}
 			footer hr {
@@ -49,18 +53,13 @@
 		<header role="mainHeader">
 			<section class="row">
 				<article class="col-md-5 col-md-offset-2">
-					<h1>San Francisco</h1>
+					<h1>San Francisco - <span>The city by the bay</span></h1>
 				</article>
 				<article class="col-md-2">
 					<input type="text" class="form-control" placeholder="Search this site" />
 				</article>
 				<article class="col-md-1">
 					<button class="btn btn-default">Search</button>
-				</article>
-			</section>
-			<section class="row">
-				<article class="col-md-4 col-md-offset-3">
-					<p><em>The city by the bay</em></p>
 				</article>
 			</section>
 		</header>
@@ -112,7 +111,7 @@
 							<label for="comments">Comments:</label>
 							<textarea id="comments" class="form-control"></textarea>
 						</div>
-						<button class="btn btn-lg btn-info">Submit</button>
+						<button class="btn btn-lg btn-info center-block">Submit</button>
 					</form>
 				</article>
 			</section>
@@ -126,6 +125,3 @@
 
 	</body>
 </html>
-
-
-

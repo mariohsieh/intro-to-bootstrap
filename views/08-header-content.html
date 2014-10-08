@@ -6,12 +6,13 @@
 		<ul>
 			<li>
 				<div class="message">
-					<p>Write content for header</p>
+					<p>Add Bootstrap classes for layout</p>
+					
 				</div>
 			</li>
 			<li>
 				<div class="message">
-					<p>Add Bootstrap classes for layout</p>
+					<p>Write content for header</p>
 				</div>
 			</li>
 			<li>
@@ -43,15 +44,44 @@
 							Using the same mockup with the rows overlayed, I have overlayed yellow boxes to represent columns over the previously used mockup.
 						</p>
 						<figure class="textCenter">
-							<img class="pointer" alt="compare-buttons" src="img/screenshots/webpage-columns.png" data-img-click>
+							<img class="pointer" alt="mockup with columns overlay" src="img/screenshots/webpage-columns.png" data-img-click>
 						</figure>
 						<p>
-							Looking at the header, there are 3 columns so let's write the code for that in the header:
+							Looking at the header, there are 3 columns so let's write the skeleton HTML code for that in the header:
 						</p>
 						<pre><br>&lt;header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=""&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=""&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=""&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/header&gt;<br><br></pre>
+						<p>
+							Now we need to add the Bootstrap classes to make the <code>article</code> tags actual columns.&nbsp;&nbsp;Notice that the columns are centered but since we used <code>container-fluid</code> we have to offset the first column.<br><br>The 3 columns are taking up 75% of the total horizontal space so if there are 12 total units then 75% of 12 units would be 8 units for the 3 columns.<br><br>12 - 8 leaves 4 units for the margin on the left and right.&nbsp;&nbsp;Since we only need to worry about the left margin, we will set the offset value to 2.<br><br>Look at the image below to see how to divide the 12 units across the rows.
+						</p>
+						<figure class="textCenter">
+							<img class="pointer" alt="mockup with units overlay" src="img/screenshots/webpage-units.png" data-img-click>
+						</figure>
+						<p>
+							So let's fill in the columns and also the HTML code for the heading, input box and the search button:
+						</p>
+						<pre><br>&lt;header&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-5 col-offset-md-2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;San Francisco - &lt;span&gt;The city by the bay&lt;/span&gt;&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="form-control" placeholder="Search this site"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default"&gt;Search&lt;/button&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/header&gt;<br><br></pre>
+					</div>
+				</blockquote>
+			</div>
+			<a name="step2"></a>
+			<div class="step">
+				<h1><span class="prefix">Step 2</span></h1>
+				<blockquote>
+					<div class="message">
+						<p>
+							For this step, we want you to style the HTML tags of the header to resemble the mockup.  Some of text may not be aligned properly or the font might be the wrong size which means you'll have to adjust the CSS properties to get them to display correctly.&nbsp;&nbsp;The <code>vertical-align</code> and <code>font-size</code> properties might be helpful to solve these issues.  
+						</p>
 					</div>
 				</blockquote>
 			</div>
 		</blockquote>
 	</section>
+	<section class="step next_step">
+		<h1>Next Step:</h1>
+		<p>In the next step, we will write the code for the main.</p>
+		<p class="link">Go to <a ui-sref="home.mainContent" ng-click="changeState('home.mainContent')">Main Content</a></p>
+	</section>
+	<div class="back">
+		Back to <a class="back" ui-sref="home.basicLayout" ng-click="changeState('home.basicLayout')">Basic Layout</a></p>
+	</div>		
 </div>
