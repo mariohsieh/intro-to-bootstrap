@@ -20,7 +20,6 @@
 				font-size: .75em;
 				font-style: italic;
 			}
-			
 			main {
 				padding-bottom: 20px;
 			}
@@ -56,7 +55,7 @@
 					<h1>San Francisco - <span>The city by the bay</span></h1>
 				</article>
 				<article class="col-md-2">
-					<input type="text" class="form-control" placeholder="Search this site" />
+					<input type="text" class="form-control" placeholder="Search this site">
 				</article>
 				<article class="col-md-1">
 					<button class="btn btn-default">Search</button>

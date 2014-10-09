@@ -6,13 +6,13 @@
 		<ul>
 			<li>
 				<div class="message">
-					<p>Write the HTML code and add Bootstrap classes for columns</p>
+					<p>Identify what HTML tags are needed for the content.</p>
 					
 				</div>
 			</li>
 			<li>
 				<div class="message">
-					<p>Write the HTML tags for the text</p>
+					<p>Write the HTML code and add Bootstrap classes for columns</p>
 				</div>
 			</li>
 			<li>
@@ -27,13 +27,54 @@
 		<blockquote>
 			<div class="message">
 				<p>
+					Continue re-creating the mockup by coding out the main content.  Using the mockup with the columns overlayed from the last page, code the first two sections of the main content.&nbsp;&nbsp;Then, write the HTML code for the images, list, and the large quote by Tony Bennett.
 				</p>
 			</div>
+		</blockquote>		
+	</section>
+	<section class="steps">
+		<h1>Step 1</h1>
+		<blockquote>
+			<div class="message">
+				<p>
+					The first row of the main content contains three images.&nbsp;&nbsp;Before writing anything, create a sub-folder called "img" in your project folder and put the images inside.&nbsp;&nbsp;Now refer back to the mockup to see the widths needed for each column:
+				</p>
+				<figure class="textCenter">
+					<img class="pointer" alt="mockup with uints" src="img/screenshots/webpage-units.png" data-img-click>
+				</figure>
+				<p>
+					The columns for the row of images should like this:
+				</p>
+				<pre><br>&lt;main&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2 col-offset-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>...<br><br></pre>				
+				<p>
+					With the columns set, write in the html code for the images.
+				</p>
+				<pre><br>&lt;main&gt;<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2 col-offset-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="Bay Bridge" src="img/bay-bridge.jpg"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="Palace of Fine Arts" src="img/palace-of-fine-arts.jpg"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="Legion of Honor" src="img/legion-of-honor.jpg"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>...<br><br></pre>
+				<p>
+					You may have noticed that the images don't quite fit.&nbsp;&nbsp;What can you do with CSS to make them display properly?&nbsp;&nbsp;At this point, adjust the CSS properties to resemble the mockup.
+				</p>
+			</div>			
 		</blockquote>
-	</section>	
+		<h1>Step 2</h1>
+		<blockquote>
+			<div class="message">
+				<p>
+					Let's move on the next row of the main content.&nbsp;&nbsp;The left column nests a single unordered list and the right column has one large line of text followed by a smaller line of text.<br><br>Referring to the same mockup from before, let's write out the code for the columns:
+				</p>
+				<pre><br>&lt;main&gt;<br>&nbsp;&nbsp;...<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2 col-offset-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>...<br><br></pre>				
+				<p>
+					Then fill in the content.  Notice that the second line of text is aligned to the right, so you'll have to add a <code>text-right</code> class. 
+				</p>
+				<pre><br>&lt;main&gt;<br>&nbsp;&nbsp;...<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-2 col-offset-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;"I left my heart in San Francisco."&lt;h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="text-right"&gt;-Tony Bennet&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>...<br><br></pre>
+				<p>
+					With the columns set and the content in place, now just style any remaining display issues with CSS to resemble the mockup.
+				</p>
+			</div>
+		</blockquote>		
+	</section>
 	<section class="step next_step">
 		<h1>Next Step:</h1>
-		<p>In the next step, we will write the code for the form & footer.</p>
+		<p>In the next step, we will finis by writing the code for the form & footer.</p>
 		<p class="link">Go to <a ui-sref="home.formAndFooter" ng-click="changeState('home.formAndFooter')">Form & Footer</a></p>
 	</section>
 	<div class="back">
