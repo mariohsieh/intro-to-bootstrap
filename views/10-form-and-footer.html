@@ -7,8 +7,7 @@
 		<ul>
 			<li>
 				<div class="message">
-					<p>Finish up the remain main content</p>
-					
+					<p>Finish up the remaining main content</p>
 				</div>
 			</li>
 			<li>
@@ -23,6 +22,40 @@
 		<blockquote>
 			<div class="message">
 				<p>
+					There is one more row of the main content to code then we'll finish up with the <code>footer</code>.
+				</p>
+			</div>
+		</blockquote>
+	</section>
+	<section class="steps">
+		<h1>Step 1</h1>
+		<blockquote>
+			<div class="message">
+				<p>
+					Again, referring to the mockup, you will see the last row of the main section has a single 4-unit wide column centered on the webpage.&nbsp;&nbsp;This column holds a submission form that contains two <code>input</code> fields for a name and address, a <code>textarea</code> for comments, and a submission <code>button</code>.&nbsp;&nbsp;Also, a <code>label</code> for each respective <code>form</code> element.
+				</p>
+				<figure class="textCenter">
+					<img class="pointer" alt="mockup with uints" src="img/screenshots/webpage-units.png" data-img-click>
+				</figure>
+				<p>
+					So let's code out the column:
+				</p>
+				<pre><br>&lt;main&gt;<br>&nbsp;&nbsp;...<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4 col-offset-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/main&gt;<br><br></pre>
+				<p>
+					Then fill in the form:
+				</p>
+				<pre><br>&lt;main&gt;<br>&nbsp;&nbsp;...<br>&nbsp;&nbsp;&lt;section class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class="col-md-4 col-offset-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Contact Us&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fullName"&gt;Full Name:&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fullName" class="form-control"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="emailAddress"&gt;Email Address:&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="emailAddress" class="form-control"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="comments"&gt;Comments:&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea id="comments" class="form-control"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/main&gt;<br><br></pre>				
+			</div>
+		</blockquote>
+		<h1>Step 2</h1>
+		<blockquote>
+			<div class="message">
+				<p>
+					With the <code>header</code> and <code>main</code> tags done, we can finish this webpage by coding the <code>footer</code>.&nbsp;&nbsp;The <code>footer</code> content consists of one column, 6-unit in width, and two elements nested inside.  A <code>hr</code> line and a copyright for Railsbridge that is also centered inside the column.<br><br>Let's write the code for the <code>footer</code>.
+				</p>
+				<pre><br>&lt;footer&gt;<br>&nbsp;&nbsp;&lt;article class="col-md-6 col-offset-md-3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-center"&gt;&copy; 2014 RailsBridge&lt;/p&gt;&nbsp;&nbsp;<br>&nbsp;&nbsp;&lt;/article&gt;<br>&lt;/footer&gt;<br><br></pre>
+				<p>
+					To finish it up, please adjust CSS for the HTML tags if they are not displaying properly.<br><br>Here is the <a target="_blank" href="webpage.html">live demo</a> again if you wish to see it.  
 				</p>
 			</div>
 		</blockquote>

@@ -59,6 +59,9 @@ a {
   position: sticky;
   top: 30px !important; }
 
+main .doc {
+  max-width: 60em;
+  margin-left: 2em; }
 main figure img {
   display: inline-block;
   height: 150px;
